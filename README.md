@@ -42,6 +42,10 @@ This lab helps you to build GNS3 lab on a remote server at the AWS add Zabbix an
     ```
     After reboot on a welcome screen you will find URL to grab your OpenVPN config file
     Now open your OpenVPN client and add config file
-    Now you can connect.
+    Now you can connect. Be sure that your VPN is now active and you see "Connected"
    
 4) Your GNS3 client (assuming you have installed it already from the  [**official web site**](https://www.gns3.com/))
+5) Now let's configure GNS3 client to connect to the AWS server
+   + Go to the GNS3-->Preferences-->Server-->Be sure that "Enable local server" checkbox is unchecked
+   + In the Host field just type your VPN IP address. You can find it on a welcome screen after OpenVPN installation. Usually it is 172.16.253.1
+   + You can leave all other fields untouched 
